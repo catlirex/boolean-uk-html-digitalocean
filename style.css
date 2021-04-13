@@ -361,3 +361,42 @@ width: 40px;
     color: var(--logo-blue);
     text-decoration: none;
 }
+
+/* BUSINESS REGION  */
+.business-region{
+    background-color: #0f3da0;
+    padding: 40px 0;
+}
+
+.business-region h2{
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+.business-region ul{
+    list-style: none;
+    columns: 2;
+}
+
+.business-region ul li{
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    border-bottom: 1px solid whitesmoke;
+    padding: 5px 0;
+    justify-content: center;
+    line-height: 1.5em;   
+}
+.business-region ul li:nth-child(7*(n+1)){
+    border: none;
+}
+
+.business-region span{
+    color: whitesmoke;
+    font-size: 0.7rem;
+}
+
+.business-region a{
+    color: turquoise;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
