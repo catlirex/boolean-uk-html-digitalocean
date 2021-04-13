@@ -13,6 +13,7 @@ html{
     --text-color:#031B4F;
     --logo-blue:#006AFF;
     --text-gray:rgba(3,27,78,.7);
+    --background-gray:#F3F5F9;
 }
 .wrapper{
     margin-left: auto;
@@ -25,8 +26,6 @@ html{
     /* HEADER  */
 
 header{
-      
-   
     background-color: white;
 
     position: fixed;
@@ -197,7 +196,7 @@ header nav svg{
 
 /* BUSINESS PARTNER  */
 .business-partner{
-    background-color: #F3F5F9;
+    background-color:var(--background-gray);
     width: 100%;
     
 }
@@ -284,6 +283,47 @@ width: 40px;
     color: var(--text-color);
 }
 
+.design p,
 .deploy-demo-card p{
     color: var(--text-gray);
 }
+
+/* DESIGN */
+.design{
+    background-color:var(--background-gray);
+    padding: 40px 0;
+}
+.design .wrapper{
+    text-align: center;
+    align-items: center;
+}
+
+.design h2{
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+.design .design-gallery{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.design .design-gallery img{
+    width: 600px;
+    padding: 30px 0;
+    justify-self: center;
+}
+
+.design .design-gallery svg.left-arrow{
+    justify-self:end;
+    fill: var(--text-gray);
+}
+
+.design p{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding-bottom: 5px;
+}
+
