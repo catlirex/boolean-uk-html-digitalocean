@@ -438,3 +438,33 @@ width: 40px;
     color: var(--logo-blue);
     text-decoration: none;
 }
+
+/* GET STARTED */
+.get-started{
+    background-color: #0f3da0;
+    padding: 50px 0;
+    
+}
+
+.get-started .wrapper{
+    display: grid;
+    justify-content: center;
+}
+.get-started h2{
+    text-align: center;
+    color:whitesmoke;
+   padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.get-started a{
+    
+    background-color: white;
+    line-height: 40px;
+    border-radius:10px;
+    text-align: center;
+    margin: 0px 30px;
+
+    text-decoration: none;
+    color: var(--logo-blue);
+}
