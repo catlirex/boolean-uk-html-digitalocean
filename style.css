@@ -339,6 +339,15 @@ width: 40px;
     fill: var(--text-gray);
 }
 
+svg.dot{
+    color: var(--logo-blue);
+   
+}
+
+svg.active-dot{
+    fill: var(--logo-blue);
+}
+
 .design p{
     font-size: 0.8rem;
     color: var(--text-color);
@@ -552,7 +561,7 @@ footer .sitemap ul li a:hover{
 }
 
     
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 900px) {
 
 
     /* HEADER  */
@@ -576,6 +585,8 @@ footer .sitemap ul li a:hover{
 h2{
     font-size: 2rem;
 }
+
+/* BUSINESS REGION  */
 .business-region ul{
     columns: 1;
 }
@@ -603,5 +614,75 @@ footer .sitemap{
     grid-template-columns: 1fr 1fr;
     place-items: left;
     grid-gap: 50px
+
+}
+}
+
+@media screen and (max-width: 600px) {
+
+/* Cover  */
+.cover-container{
+    
+    grid-template-columns:inherit;
+    grid-auto-flow: row;
+}
+
+.cover .headline{
+    padding-bottom: 0;
+}
+.sign-up-card{
+    margin: 40px 0;
+}
+.cover .headline h3{
+    font-size: 1.5rem;
+}
+
+/* BUSINESS PARTNER  */
+.logo-bar{
+    grid-auto-flow: inherit;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    grid-gap: 20px;
+    padding: 20px 40px;
+}
+
+/* DEPLOY  */
+.deploy-demo{
+    
+   display: block;
+   padding: 0 20px;
+}
+.deploy-demo .deploy-service{
+    padding-bottom: 20px;
+}
+
+/* DESIGN  */
+.design .design-gallery img{
+    max-width: 400px;
+}
+
+svg.left-arrow,
+svg.right-arrow{
+    display: none;
+}
+
+/* FEATURES  */
+.features .features-container{
+    display: block;
+    padding: 20px 20px;
+}
+
+.features .feature-card{
+    padding-top:30px;
+}
+
+/* FOOTER  */
+footer .sitemap{
+   display: block;
+}
+footer .sitemap ul{
+    padding-bottom: 30px;
+    padding-left:0;
+}
 
 }
