@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div>css</div>
   
   <header>
         <div class="container wrapper">
         <img class="logo" src="/assets/icons/logo.png" alt="Digital Ocean logo">
         <nav class="top-nav">
-            <ul>
+            <ul class="center-column-grid">
                 <li><a href=".">Products
                     <svg class="arrow-down" width="10px" viewBox="0 0 129 129" enable-background="new 0 0 129 129">
                     <g>
@@ -36,7 +36,7 @@
             </ul>
           </nav>
           <nav class="top-right-menu">
-                <ul>
+                <ul class="center-column-grid">
                     <li><a href=".">Doc</a></li>
                     <li><a href=".">Support
                         <svg class="arrow-down" width="10px" viewBox="0 0 129 129" enable-background="new 0 0 129 129">
@@ -46,7 +46,7 @@
                           </svg>
                     </a></li>
                     <li><a href=".">Login</a></li>
-                    <li><a class="sign-up" href=".">Sign up</a></li>
+                    <li><a class="border-rounded sign-up" href=".">Sign up</a></li>
                 </ul>
               </nav>
               <svg class="small-menu" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -60,13 +60,13 @@
                 <h1>The Simplest cloud platform for developers & teams</h1>
                 <h3>Deploy, manage, and scale cloud application faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or tem thousand.</h3>
               </div>
-              <div class="sign-up-card">
+              <div class="border-rounded sign-up-card">
                 <h2>Deploy your app in seconds.</h2>
                 <h2><strong>Get started now.</strong></h2>
                 <form class="sign-up-form">
-                  <input type="email" placeholder="Email">
-                  <input type="password" placeholder="Password">
-                  <button>Create your account</button>
+                  <input class="remove-style signup" type="email" placeholder="Email">
+                  <input class="remove-style signup" type="password" placeholder="Password">
+                  <button class="remove-style create-account">Create your account</button>
                 </form>
                   <a class="sign-google" href=".">
                     <img src="assets/icons/google-icon.png" alt="google icon">
@@ -123,11 +123,11 @@
           </div>
         </div>
       </section>
-      <section class="design">
-        <div class="wrapper">
+      <section class="gray-background design">
+        <div class="wrapper align-center">
         <h2>Designed for developers</h2>
         <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
-        <div class="design-gallery">
+        <div class="gallery">
                 <svg class="left-arrow" width="11px" height="20px" viewBox="0 0 11 20">
                   
                   <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -260,10 +260,10 @@
           </ul>
         </div>
       </section>
-      <section class="testimonial">
-        <div class="wrapper">
+      <section class="testimonial gray-background">
+        <div class="wrapper align-center">
         <h2>Development teams love DigitalOcean</h2>
-        <div class="testimonial-gallery">
+        <div class="gallery">
                 <svg class="left-arrow" width="11px" height="20px" viewBox="0 0 11 20">
                   
                   <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -313,7 +313,7 @@
       <section class="get-started">
         <div class="wrapper">
         <h2>Get started now.</h2>
-        <a href=".">Create your account</a>
+        <a class="border-rounded" href=".">Create your account</a>
       </div>  
       </section>
       <footer>

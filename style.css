@@ -4,6 +4,49 @@
     box-sizing: border-box;
     }
 
+.gallery{
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+}
+
+.gray-background{
+    background-color:var(--background-gray);
+    padding: 40px 0;
+}
+
+.align-center{
+    text-align: center;
+    align-items: center;
+}
+
+.remove-style{
+    appearance: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    cursor: text;
+    outline: none;
+    border: inherit;
+    border-style: inherit;
+
+}
+
+.border-rounded{
+    border-radius:10px;
+    text-align: center;
+}
+
+.center-column-grid{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    place-content: center;
+}
+
     /* BODY  */
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,10 +80,8 @@ header .container{
     display: grid;
     grid-template-columns: 150px 1fr 250px;
     grid-gap: 50px;
-    height: 100%;
-    
+    height: 100%;   
 }
-
 
 header .logo{
     width: 150px;
@@ -49,16 +90,6 @@ header .logo{
 
 header nav{
     align-self: center;
-}
-
-header nav ul{
-    list-style: none;
-
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 10px;
-
-    place-content: center;
 }
 
 header a{
@@ -70,7 +101,6 @@ header a{
 header nav .sign-up{
     border: 1px solid var(--logo-blue);
     padding: 5px 10px;
-    border-radius: 5px;
     color: var(--logo-blue);
 }
 
@@ -87,9 +117,7 @@ header svg.small-menu{
 /* COVER  */
 
 .cover{
-    
     background-image: url(assets/image/cover-background.jpeg);
-    
 }
 
 .cover-container{
@@ -114,20 +142,13 @@ header svg.small-menu{
 }
 .sign-up-card{
     background-color: white;
-    text-align: center;
     margin: 100px 0;
-    border-radius: 10px;
-    
     height: 400px;
     padding: 20px 10px;
 }
 
 .sign-up-form{
     text-align: -webkit-center;
-}
-
-.sign-up-form input{
-    display: block;
 }
 
 .sign-up-card strong{
@@ -137,41 +158,28 @@ header svg.small-menu{
     padding: 5px 0;
 }
 
-.sign-up-form  input{
-    appearance: none;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: inherit;
-    line-height: inherit;
-    cursor: text;
-    outline: none;
 
-    font-size: 1rem;
+.sign-up-form  .signup{
+    display: block;
+   font-size: 1rem;
     text-indent: 0px;
     width: 100%;
     padding: 5px;
     margin: 10px 0;
     border:1px solid lightgray;
+    border-radius: 5px;
 }
 
-.sign-up-form button{
+.sign-up-form .create-account{
     background-color: rgb(102, 158, 227);
-    appearance: none;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: inherit;
-    line-height: inherit;
-    cursor: text;
-    outline: none;
-    border: none;
-
     font-size: 0.8rem;
     color: white;
     text-indent: 0px;
     width: 100%;
     padding: 5px;
     margin: 10px 0;
+    border: inherit;
+    border-radius: 5px;
 }
 
 
@@ -240,9 +248,6 @@ a.customer-story{
     padding: 50px 0;
     text-align: center;
 }
-/* .deploy h2{
-font-size: 1.8rem;
-} */
 
 .deploy p.description{
     padding: 10px 20px 50px 20px;
@@ -301,18 +306,6 @@ width: 40px;
 }
 
 /* DESIGN */
-.testimonial,
-.design{
-    background-color:var(--background-gray);
-    padding: 40px 0;
-}
-
-.testimonial .wrapper,
-.design .wrapper{
-    text-align: center;
-    align-items: center;
-}
-
 .testimonial h2,
 .design h2{
     font-weight: 500;
@@ -320,19 +313,11 @@ width: 40px;
     padding: 20px 0;
 }
 
-.testimonial .testimonial-gallery,
-.design .design-gallery{
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-}
-
-.design .design-gallery img{
+.design img{
     width: 600px;
     padding: 30px 0;
     justify-self: center;
 }
-
 
  svg.left-arrow{
     justify-self:end;
@@ -488,12 +473,12 @@ svg.active-dot{
     font-size: 2rem;
 }
 
+
 .get-started a{
     
     background-color: white;
     line-height: 40px;
-    border-radius:10px;
-    text-align: center;
+    
     margin: 0px 30px;
 
     text-decoration: none;
@@ -540,8 +525,7 @@ footer .sitemap{
 footer .sitemap ul{
  color: white;
  list-style: none;
- 
-padding-left:20px;
+ padding-left:20px;
 }
 
 footer .sitemap ul li{
@@ -562,8 +546,6 @@ footer .sitemap ul li a:hover{
 
     
 @media screen and (max-width: 900px) {
-
-
     /* HEADER  */
  header .container{
     display: grid;
@@ -591,7 +573,6 @@ h2{
     columns: 1;
 }
 
-
 /* TESTIMONIAL  */
 .testimonial-card{
      width: 300px;
@@ -602,6 +583,7 @@ h2{
 .testimonial-card h3{
     font-size: 1.5rem;
    }
+
 /* FOOTER  */
 footer .container{
     display: grid;
@@ -619,7 +601,6 @@ footer .sitemap{
 }
 
 @media screen and (max-width: 600px) {
-
 /* Cover  */
 .cover-container{
     
